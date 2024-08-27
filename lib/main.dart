@@ -20,6 +20,14 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.white,
         elevation: 0,
+        title: Text(
+          'HUMMING BIRD.',
+          style: TextStyle(
+            color: Colors.black,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        centerTitle: false,
         actions: [
           if (MediaQuery.of(context).size.width >= 600)
             Row(
@@ -112,7 +120,10 @@ class HomeScreen extends StatelessWidget {
                       ),
                       child: Text(
                         "Join course",
-                        style: TextStyle(fontSize: 18),
+                        style: TextStyle(
+                          fontSize: 18,
+                          color: Colors.white, // Set text color to white
+                        ),
                       ),
                     ),
                   ),
@@ -151,7 +162,10 @@ class HomeScreen extends StatelessWidget {
                       ),
                       child: Text(
                         "Join course",
-                        style: TextStyle(fontSize: 18),
+                        style: TextStyle(
+                          fontSize: 18,
+                          color: Colors.white, // Set text color to white
+                        ),
                       ),
                     ),
                   ),
